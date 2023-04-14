@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+        var val = words.filter(function(element, index, array){
+            console.log(`값: ${element}, 인덱스: ${index}`);
+            console.log(`글자수: ${element.length}`)
+            return element.length > 6; 
+        });
+
+        //es6
+        var val = words.filter((element, index, array)=> element.length > 6 );
+        //리턴된 값을 모아서 배열로 만듬
+        console.log(val);
+    </script>
+</body>
+</html>

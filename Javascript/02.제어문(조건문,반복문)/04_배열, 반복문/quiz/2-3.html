@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var st = Number(prompt('첫번째 숫자를 입력하세요'));
+        var st2 = Number(prompt('두번째 숫자를 입력하세요'));
+        var st3 = Number(prompt('세번째 숫자를 입력하세요'));
+
+        var sum = st + st2 + st3;
+        var avg = sum / 3
+
+        var max = st;
+        var min = st;
+
+    if (st < st2) max = st2;
+    if (st < st3) max = st3;
+
+    if (st > st2) min = st2;
+    if (st > st3) min = st3;
+        
+    document.write(`최대값 ${max}, 최소값 ${min}, 합계 ${sum}, 평균 ${avg}`)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img class="rect1" alt="고양이1">
+    <img class="rect" alt="고양이2">
+    <img class="rect" alt="고양이3">
+    <img class="rect" alt="고양이4">
+    <a class="link">네이버</a>
+    <script>
+        const rects = document.querySelectorAll('.rect');
+
+        console.log(rects);
+
+        for(let i=0; i<rects.length; i++) {
+            const width = (i + 1) * 100;
+            const src = `https://placekitten.com/${width}/355`;
+
+            console.log(src); 
+            console.log(rects[i]);
+            
+            //html 속성을 만든다. setAttribute(속성명, 속성값)
+            rects[i].setAttribute('src', src);
+
+            //html 속성 값을 가져온다. getAttribute('속성명')
+            console.log(rects[i].getAttribute('alt'))
+            console.log("================================")
+        } 
+        
+
+        const cat1 = document.querySelector('.rect1')
+        cat1.setAttribute('src', 'https://placekitten.com/625/355')
+
+        const link = document.querySelector('.link');
+        link.setAttribute('href', 'http://www.naver.com')
+    </script>
+</body>
+</html>

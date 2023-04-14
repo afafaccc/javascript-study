@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const st = Number(prompt('학년을 입력하세요'));
+        const st2 = Number(prompt('점수를 입력하세요'));
+        const result = 0;
+
+        switch (true) {
+            case st == 1 && st2 >= 60 && st2 < 101:
+                console.log("합격");
+                break;
+            case st == 2 && st2 >= 60 && st2 < 101:
+                console.log("합격");
+                break;
+            case st == 3 && st2 >= 60 && st2 < 101:
+                console.log("합격");
+                break;
+            case st == 4 && st2 >= 70 && st2 < 101:
+                console.log("합격");
+                break;
+            case st == 5 && st2 >= 60 && st2 < 101:
+                console.log("합격");
+                break;
+            case st == 6 && st2 >= 60 && st2 < 101:
+                console.log("합격");
+                break;
+
+            case st2 < 0 || st2 > 100:
+                alert("에러 입니다.")
+                break;        
+
+            default:
+                console.log("불합격");
+                break;
+        } 
+
+     
+    </script>
+</body>
+</html>
