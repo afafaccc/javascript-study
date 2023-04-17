@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+header .h_logo {
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 44px;
+  background-image: url(https://static.nid.naver.com/images/ui/join/m_naver_logo_20191126.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 240px auto;
+  color: transparent;
+  font-size: 0;
+}
+
+.wrap {
+  background-color: rgb(250, 249, 249);
+  height: 800px;
+}
+
+nav {
+  height: 120px;
+}
+
+nav > div {
+  padding-top: 50px;
+}
+
+section {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.section-input {
+  width: 425px;
+  margin: 0 auto;
+}
+
+.int {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 29px;
+  padding-right: 25px;
+  line-height: 29px;
+  border: none;
+  background: #fff;
+  font-size: 15px;
+  box-sizing: border-box;
+  -webkit-apperance: none;
+}
+
+.sel-top {
+  width: 90px;
+}
+
+.sel {
+  display: block;
+  position: relative;
+  width: 90px;
+  height: 29px;
+  padding-right: 25px;
+  line-height: 29px;
+  border: none;
+  background: #fff;
+  font-size: 15px;
+  box-sizing: border-box;
+  -webkit-apperance: none;
+}
+
+.join_title {
+  margin: 19px 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ps_box,
+.ps_box_disable {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 51px;
+  border: solid 1px #dadada;
+  padding: 10px 110px 10px 14px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.step_url {
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  font-size: 15px;
+  color: #8e8e8e;
+}
+
+.step_txt {
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  font-size: 15px;
+  color: #8e8e8e;
+}
+
+.bir_title {
+  font-size: 13px;
+  display: table-cell;
+  width: 28px;
+  padding: 3px 12px 0 14px;
+  table-layout: fixed;
+  text-align: center;
+  vertical-align: middle;
+  color: #8e8e8e;
+  border-right: 1px solid #efefef;
+  background: #f7f7f7;
+  *display: block;
+  *float: left;
+  *height: 50px;
+  *line-height: 50px;
+}
+
+.bir_dd,
+.bir_mm,
+.bir_yy {
+  display: table-cell;
+  table-layout: fixed;
+  width: 147px;
+  vertical-align: middle;
+  *display: block;
+  *float: left;
+}
+
+.bir_mm + .bir_dd,
+.bir_yy + .bir_mm {
+  padding-left: 10px;
+}
+
+.bir_wrap > div > span {
+  width: 20px;
+}
+
+.bir_wrap > div > span > input {
+  width: 100px;
+}
