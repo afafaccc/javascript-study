@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+      // 1. 전체 url 가져오기
+      const currentURL = location.href;
+
+      // 2. 쿼리스트링 파라미터 가져오기
+      const urlObj = new URL(currentURL);
+
+      // 파라미터의 정보를 가지고 있다
+      const params = urlObj.searchParams;
+
+      // 파라미터의 값을 구한다 params.get("변수명");
+      const id = params.get("id");
+
+      console.log(id);
+
+      const movieURL = `https://api.themoviedb.org/3/movie/${id}?api_key=94b352943d5fd796727f0812147d7452&language=ko-KR&append_to_response=1`;
+
+      $.ajax({
+        type: "GET",
+        url: movieURL,
+        dataType: "json",
+        async: false,
+        success: function (data) {
+          const results = data.results;
+          console.log("영화 목록", results);
+        },
+        error: function (request, status, error) {
+          console.log("code:" + request.status);
+          console.log("message:" + request.responseText);
+          console.log("error:" + error);
+        },
+      });
+    </script>
+  </body>
+</html>
